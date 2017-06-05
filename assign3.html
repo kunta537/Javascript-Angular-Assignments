@@ -1,0 +1,143 @@
+<htm>
+     <head>
+         <title>Jquery Assignment1</title>
+     </head>
+     <style>
+        .tbl {
+          border: 2px solid black;
+             margin-top: 15px;
+          padding: 10px;
+             display: none;   
+         }
+     </style>
+    <script type="text/javascript" src="jquery.js">
+    </script>
+     <script lang="text/javascript">
+         
+         function showBtn() 
+         {
+             var showhide=$('#showbutton').text();
+             var oddeven=$("#qwert").text();
+            $('#tblCollege').toggle();
+             if(showhide == 'Show button')
+             {
+             $('#showbutton').text('Hide Button'); 
+                  $('#showbutton').('#qwert:even');
+                 
+             }
+             else
+                 {
+                     $('#showbutton').text('Show button');
+                 }
+             
+             
+         }
+         
+         function showTxt()
+         {
+             var showhide=$('#showbut').text();
+             $('#tblSchool').toggle();
+             if(showhide == 'Show Textbox')
+             {
+             $('#showbut').text('Hide Textbox');   
+             }
+             else
+                 {
+                     $('#showbut').text('Show Textbox');
+                 }
+             
+         }
+         
+         
+     </script>
+     
+ 
+     <body>
+         <table style="width: 100%;height: 10%;">
+             <tr>
+                 <td style="width: 50%;">
+                     <button onclick="showBtn()" id="showbutton" >Show button</button>
+                 </td>
+                 <td>
+                <button id="showbut" onclick="showTxt()">Show Textbox</button>
+              </td>
+             </tr>
+             <tr>
+                 <td>
+                     <div id="qwert">
+                         <table id="tblCollege" class="tbl">
+                             <tr>
+                                 <td>
+                                    <button>Button1</button>    
+                                 </td>    
+                             </tr>
+                             <tr>
+                                 <td>
+                                     <button>Button2</button>
+                                 </td>    
+                             </tr>
+                             <tr>
+                              <td>
+                                    <button>Button3</button>
+                                 </td>
+                             </tr>
+                             <tr>
+                                    <td>
+                                    <button>Button4</button>    
+                                 </td> 
+                             </tr>
+                             <tr>
+                                 <td>
+                                    <button>Button5</button>    
+                                 </td>
+                             </tr>
+                             <tr>
+                                  <td>
+                                    <button>Button6</button>    
+                                 </td>
+                             </tr>
+                             <tr>
+                                  <td>
+                                    <button>Button7</button>    
+                                 </td>
+                             </tr>
+                             <tr>
+                                  <td>
+                                    <button>Button8</button>    
+                                 </td>
+                             </tr>
+                             <tr>
+                                  <td>
+                                    <button>Button9</button>    
+                                 </td>
+                             </tr>
+                             <tr>
+                                  <td>
+                                    <button>Button10</button>    
+                                 </td>
+                             </tr>
+                         </table>
+                     </div>
+                 </td>
+                 <td>
+                     <div>
+                         <table id="tblSchool" class="tbl">
+                          <tr>
+                              <td><input type="text"></td>
+                             </tr>
+                              <tr>
+                              <td><input type="text"></td>
+                             </tr>
+                            <tr>
+                              <td><input type="text"></td>
+                             </tr>
+                            <tr>
+                              <td><input type="text"></td>
+                             </tr>
+                         </table>
+                     </div>
+        </td>
+             </tr>
+         </table>
+  </body>
+ </htm> 
